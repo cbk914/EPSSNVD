@@ -28,6 +28,13 @@ if "CRON" not in os.environ:
                 with open(file_name, 'wb') as f_out:
                     f_out.writelines(f_in)
             print(f"Archivo {gz_file_name} décompressé et enregistré en tant que {file_name}")
+    elif current_locale in ["nl_NL"]:
+        answer = input("Wilt u het bestand uitpakken? (j/n): ")
+        if answer.lower() == "j":
+            with gzip.open(gz_file_name, 'rb') as f_in:
+                with open(file_name, 'wb') as f_out:
+                    f_out.writelines(f_in)
+            print(f"Bestand {gz_file_name} uitgepakt en opgeslagen als {file_name}")            
     else:
         answer = input("Do you want to uncompress the file? (y/n): ")
         if answer.lower() == "y":
