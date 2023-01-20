@@ -4,6 +4,7 @@ numpy
 pandas
 calplot
 plotly
-urllib3==1.25.11
+urllib3==1.26.5
 pytz==2022.1
 pymongo==3.11.0
+setuptools==65.5.1
