@@ -1,3 +1,6 @@
+#! /usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Author: cbk914
 # Add ´0 0 * * * /usr/bin/python3 /path/to/file/daily-update.py´ to contrab
 import urllib.request
 import datetime
